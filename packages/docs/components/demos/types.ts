@@ -1,6 +1,5 @@
 import {
   ClockWipeDemo,
-  CubeDemo,
   CustomTimingDemo,
   CustomTransitionDemo,
   FadeDemo,
@@ -627,24 +626,24 @@ export const clockWipePresentationDemo: DemoType = {
   options: [],
 };
 
-export const cubePresentationDemo: DemoType = {
-  comp: CubeDemo,
-  compHeight: 280,
-  compWidth: 540,
-  durationInFrames: 60,
-  fps: 30,
-  id: "cube",
-  autoPlay: true,
-  options: [
-    {
-      type: "enum",
-      name: "direction",
-      default: "from-left",
-      optional: "no",
-      values: ["from-left", "from-top", "from-right", "from-bottom"],
-    },
-  ],
-};
+// export const cubePresentationDemo: DemoType = {
+//   comp: CubeDemo,
+//   compHeight: 280,
+//   compWidth: 540,
+//   durationInFrames: 60,
+//   fps: 30,
+//   id: "cube",
+//   autoPlay: true,
+//   options: [
+//     {
+//       type: "enum",
+//       name: "direction",
+//       default: "from-left",
+//       optional: "no",
+//       values: ["from-left", "from-top", "from-right", "from-bottom"],
+//     },
+//   ],
+// };
 
 export const customPresentationDemo: DemoType = {
   comp: CustomTransitionDemo,

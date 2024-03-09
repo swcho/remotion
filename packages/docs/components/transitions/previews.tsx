@@ -1,5 +1,5 @@
-import type { CubeDirection } from "@remotion-dev/cube-presentation";
-import { cube } from "@remotion-dev/cube-presentation";
+// import type { CubeDirection } from "@remotion-dev/cube-presentation";
+// import { cube } from "@remotion-dev/cube-presentation";
 import type { PlayerRef } from "@remotion/player";
 import { Player } from "@remotion/player";
 import type {
@@ -149,16 +149,16 @@ export const ClockWipeDemo: React.FC<{}> = () => {
   );
 };
 
-export const CubeDemo: React.FC<{ direction: CubeDirection }> = ({
-  direction,
-}) => {
-  return (
-    <SampleTransition
-      effect={cube({ direction })}
-      durationRestThreshold={0.001}
-    />
-  );
-};
+// export const CubeDemo: React.FC<{ direction: CubeDirection }> = ({
+//   direction,
+// }) => {
+//   return (
+//     <SampleTransition
+//       effect={cube({ direction })}
+//       durationRestThreshold={0.001}
+//     />
+//   );
+// };
 
 export const CustomTransitionDemo: React.FC<{}> = () => {
   const { width, height } = useVideoConfig();

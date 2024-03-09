@@ -8,7 +8,7 @@ import type { DemoType } from "./types";
 import {
   circleDemo,
   clockWipePresentationDemo,
-  cubePresentationDemo,
+  // cubePresentationDemo,
   customPresentationDemo,
   customTimingDemo,
   ellipseDemo,
@@ -60,7 +60,7 @@ const demos: DemoType[] = [
   customPresentationDemo,
   customTimingDemo,
   clockWipePresentationDemo,
-  cubePresentationDemo,
+  // cubePresentationDemo,
 ];
 
 export const Demo: React.FC<{

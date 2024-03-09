@@ -1,4 +1,4 @@
-import { cube } from "@remotion-dev/cube-presentation";
+// import { cube } from "@remotion-dev/cube-presentation";
 import { clockWipe } from "@remotion/transitions/clock-wipe";
 import { fade } from "@remotion/transitions/fade";
 import { flip } from "@remotion/transitions/flip";
@@ -93,12 +93,12 @@ export const Presentations: React.FC = () => {
       </TOCItem>
       <TOCItem link="/docs/transitions/presentations/cube">
         <div style={row}>
-          <PresentationPreview
+          {/* <PresentationPreview
             durationRestThreshold={0.001}
             effect={cube({
               direction: "from-left",
             })}
-          />
+          /> */}
           <div style={{ flex: 1, marginLeft: 10 }}>
             <strong>
               <code>{"cube()"}</code>
