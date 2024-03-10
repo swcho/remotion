@@ -129,6 +129,8 @@ export class HeadlessBrowser extends EventEmitter {
 			throw new Error('Missing browser context');
 		}
 
+		const {type, title, url} = targetInfo;
+		console.log('#targetCreated', {type, title, url});
 		const target = new Target(
 			targetInfo,
 			context,

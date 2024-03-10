@@ -69,6 +69,7 @@ export class Connection extends EventEmitter {
 		// So now we check if there are any params or not and deal with them accordingly.
 		const params = paramArgs.length ? paramArgs[0] : undefined;
 		const id = this._rawSend({method, params});
+		console.log(`send: ${method}`);
 		return new Promise<{value: Commands[T]['returnType']; size: number}>(
 			(resolve, reject) => {
 				this.#callbacks.set(id, {

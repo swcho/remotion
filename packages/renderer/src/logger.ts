@@ -31,7 +31,7 @@ export const Log = {
 	) => {
 		writeInRepro('verbose', ...args);
 		if (isEqualOrBelowLogLevel(options.logLevel, 'verbose')) {
-			return console.log(
+			return console.trace(
 				...[
 					options.indent ? INDENT_TOKEN : null,
 					options.tag ? verboseTag(options.tag) : null,
