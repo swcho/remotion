@@ -76,6 +76,8 @@ export const Editor: React.FC<{Root: React.FC; readOnlyStudio: boolean}> = ({
 		return React.memo(Root);
 	}, [Root]);
 
+	// eslint-disable-next-line no-console
+	console.log('Editor');
 	return (
 		<HigherZIndex onEscape={noop} onOutsideClick={noop}>
 			<TimelineZoomContext>

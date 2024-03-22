@@ -44,6 +44,8 @@ export const startServer = async (options: {
 	port: number;
 	liveEventsServer: LiveEventsServer;
 }> => {
+	// eslint-disable-next-line no-console
+	console.log('startServer', options.entry);
 	const [, config] = await BundlerInternals.webpackConfig({
 		entry: options.entry,
 		userDefinedComponent: options.userDefinedComponent,

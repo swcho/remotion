@@ -281,6 +281,8 @@ export const handleRoutes = ({
 }) => {
 	const url = new URL(request.url as string, 'http://localhost');
 
+	// eslint-disable-next-line no-console
+	console.log('handleRoutes', request.url);
 	if (url.pathname === '/api/project-info') {
 		return handleProjectInfo(remotionRoot, request, response);
 	}

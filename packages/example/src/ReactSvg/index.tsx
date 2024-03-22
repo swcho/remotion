@@ -88,6 +88,7 @@ const ReactSvg: React.FC<{
 
 	const scale = frame < 70 ? scaleIn : scaleOut;
 
+	console.log('index.tsx');
 	return (
 		<>
 			<Experimental.Clipper

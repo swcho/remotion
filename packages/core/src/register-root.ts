@@ -9,6 +9,8 @@ let listeners: ((comp: React.FC) => void)[] = [];
  * @see [Documentation](https://www.remotion.dev/docs/register-root)
  */
 export const registerRoot = (comp: React.FC) => {
+	// eslint-disable-next-line no-console
+	console.log('registerRoot');
 	if (!comp) {
 		throw new Error(
 			`You must pass a React component to registerRoot(), but ${JSON.stringify(

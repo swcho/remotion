@@ -76,5 +76,7 @@ export const GlobalKeybindings: React.FC = () => {
 		};
 	}, [keybindings, setCheckerboard, setSelectedModal]);
 
+	// eslint-disable-next-line no-console
+	console.log('GlobalKeybindings');
 	return null;
 };

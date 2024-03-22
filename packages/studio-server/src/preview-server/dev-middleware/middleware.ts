@@ -162,6 +162,8 @@ export function middleware(context: DevMiddlewareContext) {
 		next: () => void,
 	) {
 		const acceptedMethods = ['GET', 'HEAD'];
+		// eslint-disable-next-line no-console
+		console.log('dev-middleware', req.url);
 
 		if (req.method && !acceptedMethods.includes(req.method)) {
 			goNext();

@@ -136,6 +136,8 @@ export const startStudio = async ({
 		staticHash,
 	});
 
+	// eslint-disable-next-line no-console
+	console.log('startStudio', {previewEntry, fullEntryPath, remotionRoot});
 	const {port, liveEventsServer} = await startServer({
 		entry: path.resolve(previewEntry),
 		userDefinedComponent: fullEntryPath,

@@ -18,6 +18,8 @@ export const Studio: React.FC<{
 		window.remotion_isStudio = true;
 		Internals.enableSequenceStackTraces();
 	}, []);
+	// eslint-disable-next-line no-console
+	console.log('Studio', {rootComponent});
 	return (
 		<Internals.RemotionRoot
 			numberOfAudioTags={window.remotion_numberOfAudioTags}
